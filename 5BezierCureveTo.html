@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id="canvas" style="margin:0 auto;border:1px #ddd solid">
+		The current browser does not support Canvas, can replace the browser a try!
+	</canvas>
+
+	<script>
+
+		window.onload = function(){
+			var canvas = document.getElementById('canvas');
+
+			canvas.width = 1024;
+			canvas.height = 768;
+
+			if(canvas.getContext('2d')){
+				var context = canvas.getContext('2d');
+				
+
+				//案例 ：2arcTo里面注释
+	
+
+			}else{
+				alert('当前游览器不支持Canvas，请更换游览器后再试！');
+			}
+		}
+
+	</script>
+</body>
+<script>
+	/*贝塞尔三次曲线
+
+		
+		起始点（x0,y0）
+		控制点（x1,y1）
+		终止点（x2,y2）
+
+		context.moveTo(x0,y0);
+
+		context.bezierCurveTo(x1,y1,x2,y2,x3,y3);
+		
+	*/
+</script>
+</html>
